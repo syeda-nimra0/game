@@ -1,0 +1,41 @@
+  body {
+    margin: 0;
+    padding: 0;
+    background: url('PoykWUB.gif') no-repeat center center fixed;
+    background-size: cover;
+  } 
+  .game-area{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+  }
+  .fighter{
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+.fighter-left{
+    left: 10%;
+    height: 300px;
+    width: 300px;
+}
+.fighter-right{
+    right: 10%;
+      height: 300px;
+    width: 300px;
+    /* transform: scaleX(-1); */
+}
+@media (max-width: 600px) {
+  #model1, #model2 {
+    transform: scale(0.7);
+    top: 65%;
+    left: 20%;
+    right: 20%;
+  }
+
+  body {
+    background-size: cover;
+  }
+}
